@@ -2,27 +2,19 @@
     <div class="row">
         <div class="col-xs-12">
             <label>Username</label>
-            <input
-                type="text"
-                class="form-control"
-                [(ngModel)]="userName"
-            >
+            <input type="text" class="form-control" [(ngModel)]="userName">
             <p>{{userName}}</p>
 
-           <!--<button
+            <!--<button
                 class="btn btn-primary"
                 [disabled]="isUserNameEmpty()"
                 (click)="onResetUserName()"
             >
                 Reset userName
             </button> -->
-            <button
-            class="btn btn-primary"
-            [disabled]="userName===''"
-            (click)="userName=''"
-        >
-            Reset userName
-        </button>
+            <button class="btn btn-primary" [disabled]="userName===''" (click)="userName=''">
+                Reset userName
+            </button>
         </div>
     </div>
 </div>
